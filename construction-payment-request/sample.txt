@@ -1,0 +1,21 @@
+REQUEST FOR PAYMENT
+Owner: "Alice"
+Contractor: "Bob"
+Application Number: "1"
+Application Date: 12/28/2017
+Period From: 10/30/2017 To: 12/31/2017
+
+CONTRACT OVERVIEW
+Original Contract Amount $525000
+Retainage at 10%
+
+TERMS OF AGREEMENT
+The contractor guarantees that the contract sum will not exceed the Guaranteed Maximum Price (GMP) of 550000 USD, subject to adjustments that include accepted change orders. The contractor agrees that it will be responsible for paying all costs that exceed the Guaranteed Maximum Price without reimbursement by the Owner.
+
+Payments left pending shall bear interest from the due date at the rate state below 5%
+
+Each Application for Payment shall cover a period of 2 calendar month ending on the last day of the month or as specified otherwise.
+
+The contractor shall submit an Application for Payment at least 10 days before the established ending date of the payment period.
+
+Within 7 days after receipt of the Application for payment, the Architect will either (1) issue to the Owner a certificate for Payment in the full amount of the Application for Payment; (2) Issue to the Owner a Certificate of Payment for the amount the Architect deems proper, and notify the Contractor and Owner writing of the Architect’s reason; or (3) withold certification of the entire Application for Payment and notify the Contractor and Owner of the reasons behind witholding certification entirely.

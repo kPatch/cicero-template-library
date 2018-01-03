@@ -1,0 +1,149 @@
+namespace org.accordproject.construction.requestforpayment
+
+transaction Request {
+  o String input
+}
+
+/* ****************
+ * TRANSACTIONS
+ * ****************/
+
+/**
+ * An abstract transaction that is related to a Payment Application
+ */
+abstract transaction PaymentApplicationTransaction {
+  //--> PaymentApplication paymentApplication
+}
+
+/**
+ * A submission of a payment application
+ */
+transaction ApplicationSubmission extends PaymentApplicationTransaction {
+  // o DateTime appSubmissionDate
+  o Double netChangeOrderAmount
+  o Double adjustedContractAmount
+  // o Double totalEarnedToDate
+  // o Double retainagePercentFee
+  // o Double totalLessRetainage
+  // o Double lessPrevAppPayment
+  o Double currBalanceDue
+  // o Double unpaidContractBalance
+}
+
+transaction PaymentApplicationResponse {
+  o PaymentApplicationStatus appStatus
+}
+
+/**
+ * A change order over the final cost of the project
+ */
+transaction ChangeOrderSubmission extends PaymentApplicationTransaction {
+ o Double costAddition
+ o Double costDeduction
+}
+
+/* ****************
+ * CONCEPTS
+ * ****************/
+
+/**
+ * Simple representation of a project
+ */
+concept ConstructionProject {
+  o ProjectInfo projectInfo
+  o PaymentApplication [] paymentApplications
+}
+
+/**
+ * Representation of the project's information
+ */
+concept ProjectInfo {
+  o String projectName
+  o Address projectLocation optional
+}
+
+/**
+ * Representation of US address
+ * This concept is leveraged by the concepts and participants defined in this
+ * model
+ */
+concept Address {
+  o String street
+  o String city
+  o String state
+  o String zipCode
+  o String country
+}
+
+/**
+ * Application status
+ */
+enum PaymentApplicationStatus {
+  o OUT_OF_PAYMENT_PERIOD
+  o LATE_APPLICATION
+  o OVER_GMP
+  o CHANGE_ORDER
+  o SUBMITTED   // contractor submits application
+  o RECEIVED    // owner(s) receive application, it could be that they opened it
+  o PENDING     // marked under review: change orders, schedule of values must be reviewed
+  o APPROVED    // application is approved. release of fund can be made
+  o DENIED      // further review is required, often regarding change orders
+}
+
+/* ****************
+ * ASSETS
+ * ****************/
+
+/**
+ * A Payment Application identified by its application number
+ * TODO: Why are identifiers only Strings?
+ */
+asset PaymentApplication identified by applicationNum {
+  o String applicationNum
+  o PaymentApplicationStatus applicationStatus
+  --> Owner owner
+  --> Architect architect
+}
+
+/* ****************
+ * PARTICIPANTS
+ * ****************/
+
+/**
+ * Abstract definition of a stakeholder in a construction project
+ */
+abstract participant Stakeholder identified by email {
+  o String firstName
+  o String lastName
+  o String title optional
+  o Address address
+  o String email regex=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+}
+
+/**
+ * An architect is a Stakeholder in a construction project and can
+ * certify application for payments
+ */
+participant Architect extends Stakeholder {
+  o String licenseId
+}
+
+/**
+ * A project manager is a Stakeholder in a construction project and can
+ * certify application for payments
+ */
+participant ProjectManager extends Stakeholder {
+}
+
+/**
+ * An owner, can be the project owner or property owner
+ */
+participant Owner extends Stakeholder {
+}
+
+/**
+ * A contractor is a stakeholder within the project.
+ * A contractor requires disclosing contact information.
+ */
+participant Contractor extends Stakeholder {
+}

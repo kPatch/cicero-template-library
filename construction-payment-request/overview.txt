@@ -1,0 +1,271 @@
+Application and Certificate for Payment
+Request for Payment, Schedule of Values & Certification
+ABSTRACT
+
+Overview	1
+Titles	1
+Description	2
+Certifying Requirements	2
+Schedule of Values (Continuation Sheet)	3
+Template	4
+Requirements	4
+Contact Information	4
+Application Information	4
+Payment Information	5
+Certifying Parties	5
+Contractor	5
+Clause (x)	5
+Clause (x)	5
+Clause (x)	5
+Clause (x)	6
+Architect	6
+Inspection	6
+Construction Manager	6
+Engineer	6
+Definitions	6
+Overview
+Titles
+Application and Certificate for Payment (Named by G702)
+Request for Payment
+Pay Application
+Periodic Application for Payment
+Description
+A construction project typically involves different trades to reach completion.
+
+An executed payment application is a fundamental document that is part of a construction contract. Owners and contractors may use their own forms or leverage standard industry forms such as the AIA’s 702 - Application and Certificate for Payment.
+
+A lien lorem ipsum
+Certifying Requirements
+Additionally, depending on the contract, an owner or contractor requesting for payment may have to certifying a list of items.
+These certifications may include:
+Payment is only for work performed “in accordance with specifications, term and condition of the contract”
+That all payments due to subcontractors and suppliers from previous payments have been made
+That timely payment to subcontractors and suppliers will be made from the requested payments, and
+That the payment does not include amounts that the contractor intends to withhold or retain from a subcontractor or supplier
+
+Certifications can vary depending on the type of contract, i.e federal government contracts require a contractor asserting a claim greater than $100,000 to certify the claim under Federal Acquisition Regulation (FAIR) § 52.233-1(d)(2) as follows:
+
+I certify that the claim is made in good faith; that the supporting data are accurate and complete
+to the best of my knowledge and belief; that the
+amount requested accurately reflects the contract
+adjustment for which the Contractor believes the
+Government is liable; and that I am duly authorized
+to certify the claim on behalf of the Contractor.
+
+Therefore, it is critical that contractors evaluate the requirements and relevant facts needed before making any such certifications because penalty for false certifications can significant.
+
+False Claims Acts, at the federal level and increasingly at the state level, contain harsh penalties for improper billings submitted on government projects. These penalties can include statutory penalties per each “false claim”, three times the amount of damages to the government, and all costs, including attorney’s fees and expenses, incurred by the government in prosecuting a civil action against a contractor [10].
+
+Contracting parties are increasingly turning to electronic billing software to manage the payment application process. This software be useful for managing collection of the various items contractors are required to submit for payment, and ensuring that payment is only made after all items are appropriately submitted.
+
+This eases the administrative burden on the contracting parties (particularly for the upstream contractor that would otherwise have to manually track all submissions). But, there are typically subscription costs associated with using the software. These costs should be identified in advance to allow participating contractors and subcontractors to accurately price the job and avoid surprise.
+
+In addition, a contractor submitting payment applications
+through such an electronic system should carefully review
+its forms, especially lien and claim waiver documents, to
+ensure it has accurately completed the forms and reserved
+claims as allowed or necessary. 11 If the software does not
+allow the forms to be completely filled out, then the parties
+should discuss an alternative reporting system.
+Schedule of Values (Continuation Sheet)
+The schedule of values, also known as the continuation sheet, is a general overview of the project status.
+
+It is important to note, that depending on how the contract is written, it can be a lump sum value or an itemized list which provides a detailed description of the work and items being billed for. For example, contracts similar to that of the G702 contract require the use of a detailed list of values (G703).
+
+As a side note, during the negotiation process or during the request for proposal (RFP) and bid process, it is important to provide a sample sheet of such schedule of values to provide transparency and make the negotiation process smoother.
+
+
+One of the most important pieces to submitting an application for payment is the schedule of values. It is in essence a list of each area of work required to complete a construction project.
+
+Schedule of values can mitigate the risks of an imbalance between the work performed and the payments received during construction.
+The contracting parties should agree on the schedule of values in order to facilitate the payment process.
+
+With each payment application, the contractor reviews its progress and inserts the percentage of each scheduled value that has been completed by the end of the pay period.
+
+Overall, understanding contractual requirements regarding payment procedures and ensuring that the project management team understands those requirements are necessary to minimize the risks of delayed payments or inadvertent waiver or reduction of claims. Negotiating contract terms and establishing procedures with the payment requirements can reduce costly disputes and benefit a contractor’s bottom line.
+Why Smart Contracting?
+The real estate industry, as a whole, is an industry filled with complex processes. When reducing this scope to the real estate development and construction industry, the complex processes and the need for legal contracting are more apparent.
+
+The real estate development value chain is filled with actors of all trades, from real estate investors, real estate development companies, constractors, subcontractors, sub-subcontractors, suppliers and even government entities [CITE]. All of which are directly and indirectly affected by (1) the complexitity of the agreements that take place down the value chain, and (2) the lack of transparency of such agreements and (3) lack of transparency of the transacting parties. Investors might be defrauded, _______
+
+To this date, the real estate development and construction is holds to intensive operational and administrative processes. Requiring various parties to perform due dilligence on the agreements at stake, certify agreements,  monitor flows of money and monitor the progress of the construction projects.
+
+In this paper, we describe the automation of one of the core contracts used in construction: The application and certification for payment.
+
+Such contract can come in different flavors depending on factors such as (1) the type of project, (2) the risk of the project (incorrectly assessing a project’s value), (3) involvement of different parties.
+
+Number (1) can refer to the scale of the project, such as the development of a town, versus a construction project related to roofing, or the development of a high rise building.
+
+Number (2) relates to the contractor being unable to accurately asses the costs of the work or create a well-defined scope of work. This could be due to the scale of the project, fluctiating markets and costs of materials, or unknown factors of the project.
+
+Number (1) and (2) could, for example, lead to the use of a “lump + cost” contract. These contracts are often used on simple projects with a well-defined scope, and with a low risk of scope creep. Instead of submitting a bid on individual items of the project, the contractor submits a total and global price. Furthermore, the owner and the contractor may agree on the maximum overhead costs and allowance to be cover any unexpected conditions. This kind of contract is aimed at minimizing changer orders during construction. But, this brings a higer risk to the contractor, makes changes difficult to quantify and the Owner might reject change order requests which lead to dispute and claims.
+
+In the latter contract, for example, it is important to add a contract clause, specifying how change orders will take place and the extent the contractor could claim costs and delay damages.
+
+Number (3) relates to the involvement of parties such as architects and project managers.
+
+The smart contract formally defined in this document, can enable the following:
+
+Optimistically, this smart contract could allow for the automated release of funds upong the certification of all parties involved in the contract - similarly to an escrow payments contract.
+Template
+Requirements
+Contact Information
+PROJECT NAME: [{PROJECT_NAME}]
+PROJECT LOCATION (OPTIONAL): [{PROJECT_LOCATION}]
+OWNER NAME: [{OWNER_NAME}]
+Owner of project - where services are being performed
+OWNER ADDRESS: [{OWNER_ADDRESS}]
+Owner addressable location
+OWNER TELEPHONE NUMBER: [{TELEPHONE_NUM}]
+CONTRACTOR NAME: [{CONTRACTOR_NAME}]
+CONTRACTOR ADDRESS:  [{CONTRACTOR_ADDRESS}]
+CONTRACTOR PHONE NUMBER:  [{CONTRACTOR_PHONE_NUM}]
+Application Information
+Application Date:  [{APPLICATION_DATE}]
+Date of when the application was submitted
+APPLICATION NUMBER:  [{APPLICATION_NUM}]
+Contractor will apply for payment throughout the length of the project
+APPLICATION FROM [{APP_START_DATE}] TO [{APP_END_DATE}]
+Pay period. Pay periods are defined prior to the contract.
+Payment Information
+ORIGINAL CONTRACT AMOUNT:	[{ORIG_CONTRACT_AMNT}]
+Total cost initially estimated
+NET AMOUNT OF CHANGE ORDERS:  [{NET_AMNT_CHANGE_ORDERS}]
+Changes in estimated costs. See change order for definition
+ADJUSTED CONTRACT AMOUNT:	[{ADJ_CONTRACT_AMNT}]
+ORIGINAL CONTRACT AMOUNT + NET AMOUNT OF CHANGE ORDERS
+TOTAL EARNED TO DATE:	[{AMNT_EARNED_TO_DATE}]
+How much has been paid by owner
+Includes RETAINAGE_PERCENTAGE + previous payment orders
+RETAINAGE @ [{RETAINAGE_PERCENTAGE}]% :  [{RATAINGE_TOTAL_AMNT}]
+TOTAL EARNED LESS RETAINAGE:  [{TOTAL_EARNED_LESS_RETAINAGE}]
+AMNT_EARNED_TO_DATE - RETAINAGE_TOTAL_AMNT
+LESS PREVIOUS APPLICATION PAYMENT: [{LESS_PREV_PAYMENTS}]
+TOTAL_EARNED_LESS_RETAINAGE - (value of previous application’s TOTAL_EARNED_LESS_RETAINAGE)
+CURRENT BALANCE DUE:  [{CURENT_BALANCE_DUE}]
+Current payment balance due for this application
+UNPAID BALANCE OF CONTRACT: [{TOTAL_UPAID_BALANCE_OF_CONTRACT}]
+ADJ_CONTRACT_AMNT - TOTAL_EARNED_LESS_RETAINAGE
+Certifying Parties
+Contractor
+I hereby certify the following:
+Clause (x)
+The foregoing is just and correct and that the amount claimed is legally due after showing all just credits.
+
+Clause (x)
+All labor, materials or services have been performed in accordance to all plans and specification; and in full compliance with all terms and conditions under its contract, subcontract or purchase order.
+Clause (x)
+Payments throughout the application period have been made in full for all amounts due to: all laborers, vendors, lessors of construction equipment, subcontractors, sub-subcontractors and for all materials and labor used during the performance of this contract. Exhibit A holds a complete list of all subcontractor and suppliers retained for the performance of the contract.
+
+Clause (x)
+Certified by Contractor [{CERT_CONTRACTOR_NAME}]
+Signature: [{CERT_CONTRACTOR_SIG}] Date: [{CERT_DATE}]
+
+Architect
+For construction contracts in which the architect performs contract administration, the architect is often required to issue a certificate of payment to the owner containing the architect’s judgement as to the appropriate percentages complete and the amounts due.
+Look into AIA Contracts - G702, G703
+Inspection
+I hereby certify that I have inspected
+Construction Manager
+Certified by Architect [{CERT_ARCHITECT_NAME}]
+Signature: [{CERT_ARCHITECT_SIG}] Date: [{CERT_DATE}]
+Engineer
+Certified by Architect [{CERT_ENGINEER_NAME}]
+Signature: [{CERT_ENGINEER_SIG}] Date: [{CERT_DATE}]
+
+Definitions
+Application
+A request for payment
+Change order
+A bilateral amendment to the construction contract, whereby changes to the initial scope of work are made.
+Contractors can attempt to negotiate greater flexibility to assert claims or change order requests, but no matter what the final contract language, a contractor and especially the project management team must be acutely aware of these contract requirements
+Labor Costs
+https://strategiccfo.com/labor-costs/
+Construction Lien
+A claim made against a property by a contractor
+It used to protect contractors from the risk of not being paid for services rendered
+Retainage
+https://strategiccfo.com/retainage/
+Schedule of Values
+An itemized list of the values that represent the entire contract price
+Fsgag
+
+
+
+Cicero Template
+Grammar
+template.tem
+
+REQUEST FOR PAYMENT
+Project Name: [{projectName}]
+Project Location: [{projectLocation}]
+Owner Name: [{ownerName}]
+Owner Address: [{ownerTelephone}]
+Contractor Name: [{contractorName}]
+Contractor Address: [{contractorAddress}]
+Contractor Telephone: [{contractorTelephone}]
+Application Number: [{appNum}]
+Application Date: [{appDate}]
+Period From: [{appStartDate}] To: [{appEndDate}]
+
+CONTRACT OVERVIEW
+Original Contract Amount $[{originalContractAmount}]
+Net Amount of Change Orders: $[{netChangeOrderAmount}]
+Adjusted Contract Amount: $[{adjustedContractAmount}]
+Total Earned to Date: $[{totalEarnedToDate}]
+Retainage at [{retainagePercentFee}]%
+Total Earned Less Retainage: $[{totalLessRetainage}]
+Less Previous Application Payment: $[{lessPrevAppPayment}]
+Current Balance Due: $[{currBalanceDue}]
+Unpaid Balance of Contract: $[{unpaidContractBalance}]
+
+CHANGE ORDER SUMMARY
+Total Previously Approved - Addition: $[{totalPrevApprovedAdd}] Deductions: $[{totalPrevApproveDeduct}]
+Total Approved this Month - Addition: $[{totalMonthApprovedAdd}]
+Deduction: $[{totalMonthApprovedDeduct}]
+Totals - Additions: $[{totalChangeOrderAdd}] Deductions: $[{totalChangeOrderDeduct}]
+Net Changes by Change Order: $[{netChangeOrder}]
+
+CERTIFICATION OF CONTRACTOR
+I hereby certify to my best knowledge, information and belief the following:
+(1) The foregoing is just and correct and that the amount claimed is legally due after showing all just credits
+(2) All labor, materials or services have been performed in accordance to all plans and specifications; and in full compliance with all terms and conditions under its contract, subcontract or purchase order
+(3) Payments throughout the application period have been made in full, for all amounts due, to: all laborers, vendors, lessors of constructions equipment, subcontractors, sub-subcontractors and for all materials and labor used during the performance of this contract. Exhibit A holds a complete list of all subcontractor and suppliers retained for the performance of the contract.
+
+Certified by Contractor: $[{contractorName}]
+Signature: $[{contractorSig}] Date: $[{contractorSigDate}]
+
+APPROVAL OF REQUEST
+I certify that I have inspected the above word, that to the best of my knowledge it is in accord with all terms and conditions under contract, including corrected estimate quantities, and that the contractor is entitled to the payment aforementioned.
+
+Certified by: $[{approvingPartyName}] Title: $[{approvingPartyTitle}]
+Signature: $[{approvingPartySig}] Date: $[{approvingPartySigDate}]
+REFERENCES
+9.
+FAR §52.233-1(d)(2)(iii).
+
+10.See, e.g., 31 U.S.C. §3729 (2012) (providing for civil penalties for false claims, treble damages, and the payment of costs).
+
+11.	See, e.g., Laquila Group, Inc. v. Hunt Const. Group, Inc., 997 N.Y.S.2d
+99 (N.Y. Sup. Ct. 2014) (subcontractor argued that unqualified payment
+application “became simply an acknowledgment by [plaintiff] of its pay-
+ment receipt” because the software did not allow the subcontractor to list
+reserved claims on the “reverse side” of the form, as the form required).
+
+[ ] Progress Billing for a General Contract. 2013. The Strategic CFO. Retrieved December 23, 2017 on
+https://strategiccfo.com/progress-billing-for-a-general-contractor/
+
+
+https://strategiccfo.com/progress-billing-for-a-general-contractor/
+https://strategiccfo.com/progress-billing-example/
+https://strategiccfo.com/labor-costs/
+https://strategiccfo.com/retainage/
+https://www.fundera.com/blog/progress-billing
+http://www.projectp.com/industries/cc_billing.php
+http://businessecon.org/2015/04/progress-billings-in-construction/
+https://www.investopedia.com/terms/p/progress-billings.asp
+http://www.investinganswers.com/financial-dictionary/debt-bankruptcy/lien-775
+
+
+
+https://info.vethanlaw.com/blog/understanding-change-orders-in-construction-contracts

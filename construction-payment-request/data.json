@@ -1,0 +1,6 @@
+{
+    "$class": "org.accordproject.construction.requestforpayment.ApplicationSubmission",
+    "netChangeOrderAmount": 100000,
+    "adjustedContractAmount": 6250000,
+    "currBalanceDue": 25000
+}

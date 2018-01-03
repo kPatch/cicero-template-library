@@ -1,0 +1,39 @@
+REQUEST FOR PAYMENT
+Owner: "Alice"
+Contractor: "Bob S Construction"
+Application Number: "1"
+Application Date: 12/28/2017
+Period From: 10/30/2017 To: 10/30/2017
+
+CONTRACT OVERVIEW
+Original Contract Amount $525000
+Net Amount of Change Orders: $0
+Adjusted Contract Amount: $525000
+Total Earned to Date: $0
+Retainage at 10%
+Total Earned Less Retainage: $0
+Less Previous Application Payment: $0
+Current Balance Due: $0
+Unpaid Balance of Contract: $0
+
+CHANGE ORDER SUMMARY
+Total Previously Approved - Addition: $0 Deductions: $0
+Total Approved this Month - Addition: $0
+Deduction: $0
+Totals - Additions: $0 Deductions: $0
+Net Changes by Change Order: $0
+
+CERTIFICATION OF CONTRACTOR
+I hereby certify to my best knowledge, information and belief the following:
+(1) The foregoing is just and correct and that the amount claimed is legally due after showing all just credits
+(2) All labor, materials or services have been performed in accordance to all plans and specifications; and in full compliance with all terms and conditions under its contract, subcontract or purchase order
+(3) Payments throughout the application period have been made in full, for all amounts due, to: all laborers, vendors, lessors of constructions equipment, subcontractors, sub-subcontractors and for all materials and labor used during the performance of this contract. Exhibit A holds a complete list of all subcontractor and suppliers retained for the performance of the contract.
+
+Certified by Contractor: "Bob"
+Signature: "N/A" Date: 0/0/0
+
+APPROVAL OF REQUEST
+I certify that I have inspected the above word, that to the best of my knowledge it is in accord with all terms and conditions under contract, including corrected estimate quantities, and that the contractor is entitled to the payment aforementioned.
+
+Certified by: "Alice" Title: "TheOwner"
+Signature: "N/A"  Date: 0/0/0

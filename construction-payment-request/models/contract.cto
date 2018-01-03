@@ -1,0 +1,75 @@
+namespace org.accordproject.construction.requestforpayment.contract
+
+import org.accordproject.construction.requestforpayment.*
+
+@AccordTemplateModel("construction-request-for-payment")
+concept TemplateModel {
+  o ProjectInfo projectInfo optional
+  --> Owner owner
+  --> Contractor contractor
+  --> Architect architect optional
+
+  // Application-specific information
+  o String appNum
+  o DateTime appSubmissionDate
+  o DateTime appStartDate
+  o DateTime appEndDate
+
+  o Double originalContractAmount
+  o Double retainagePercentFee
+  o Double gmp
+  o Double interestRate
+  o Integer monthsInPaymentPeriod
+  o Integer daysBeforeEndingPeriod
+  o Integer architectApprovalDays
+
+
+
+  // Contract Overview
+  /*
+  o Double originalContractAmount
+  o Double netChangeOrderAmount
+  o Double adjustedContractAmount
+  o Double totalEarnedToDate
+  o Double retainagePercentFee
+  o Double totalLessRetainage
+  o Double lessPrevAppPayment
+  o Double currBalanceDue
+  o Double unpaidContractBalance
+  */
+
+  // Change Order Summary
+  /*
+  o Double totalPrevApprovedAdd
+  o Double totalPrevApproveDeduct
+  o Double totalMonthApprovedAdd
+  o Double totalMonthApprovedDeduct
+  o Double totalChangeOrderAdd
+  o Double totalChangeOrderDeduct
+  o Double netChangeOrder
+  */
+
+  // Certification by Contractor
+  /*
+  o String contractorName
+  o String contractorSig
+  o DateTime contractorSigDate
+  */
+
+  // Approved by
+  /*
+  o String approvingPartyName
+  o String approvingPartyTitle
+  o String approvingPartySig
+  o DateTime approvingPartySigDate
+  */
+
+  /*
+  o DateTime
+  o Double
+  o Unit
+  o Integer
+  o String
+  o Duration
+  */
+}
