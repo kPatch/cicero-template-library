@@ -42,20 +42,24 @@ describe('Logic', () => {
         engine = new Engine();
     });
 
-    describe('#LateDeliveryAndPenalty', async function() {
+    describe('#ConstructionPaymentRequestTest', async function() {
 
-        it('should execute a smart clause', async function () {
+        it('should deny payment request', async function () {
             const request = {
-                '$class': 'org.accordproject.latedeliveryandpenalty.LateDeliveryAndPenaltyRequest',
-                'forceMajeure': false,
-                'agreedDelivery': '2017-10-07T16:38:01.412Z',
-                'goodsValue': 200,
-                'transactionId': '402c8f50-9e61-433e-a7c1-afe61c06ef00',
-                'timestamp': '2017-11-12T17:38:01.412Z'
+                "$class": "org.accordproject.construction.requestforpayment.ChangeOrderValidation",
+                "netChangeOrderAmount": 100000,
+                "adjustedContractAmount": 6250000,
+                "totalEarnedToDate": 0,
+                "totalLessRetainage": 6250000,
+                "lessPrevAppPayment": 6250000,
+                "currBalanceDue": 25000,
+                "unpaidContractBalance": 6250000,
+                "transactionId":"2dbd6f6a-64b0-40d0-90c8-ffa1fc108a58",
+                "timestamp":"2018-01-30T20:01:31.280Z"
             };
             const result = await engine.execute(clause, request);
             result.should.not.be.null;
-            result.response.penalty.should.equal(110.00000000000001);
+            result.response.appStatus.should.equal('DENIED');
         });
     });
 });

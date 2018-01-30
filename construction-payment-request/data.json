@@ -3,8 +3,8 @@
     "netChangeOrderAmount": 100000,
     "adjustedContractAmount": 6250000,
     "totalEarnedToDate": 0,
-    "totalLessRetainage": 0,
-    "lessPrevAppPayment": 0,
+    "totalLessRetainage": 6250000,
+    "lessPrevAppPayment": 6250000,
     "currBalanceDue": 25000,
-    "unpaidContractBalance": 0
+    "unpaidContractBalance": 6250000
 }
