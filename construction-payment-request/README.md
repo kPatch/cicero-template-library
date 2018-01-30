@@ -1,5 +1,5 @@
 
-# Accord Protocol Template: selenis-cosntruction-proposal
+# Accord Protocol Template: construction-payment-request
 
 The is an Accord Protocol Template. Executing the clause will simply echo back the text that occurs after the string `Hello` prepended to text that is passed in the request.
 
@@ -21,7 +21,7 @@ Thank you!
 ```
 
 ```
-cicero parse --template ./selenis-cosntruction-proposal/ --dsl ./selenis-cosntruction-proposal/sample.txt
+cicero parse --template ./construction-payment-request/ --dsl ./construction-payment-request/sample.txt
 Setting clause data: {"$class":"io.clause.helloworld.TemplateModel","name":"Dan"}
 ```
 
@@ -48,13 +48,13 @@ Use the `cicero execute` command to load a template from a directory on disk, in
 ```
 data.json:
 {
-   "$class": "io.enjoin.selenis.Request",
+   "$class": "org.accordproject.construction.requestforpayment.Request",
    "input": "World"
 }
 ```
 
 ```
-cicero execute --template ./selenis-cosntruction-proposal/ --dsl ./selenis-cosntruction-proposal/sample.txt --data ./selenis-cosntruction-proposal/data.json 
+cicero execute --template ./construction-payment-request/ --dsl ./construction-payment-request/sample.txt --data ./construction-payment-request/data.json
 ```
 
 The results of execution (a JSON serialized object) are displayed. They include:
@@ -66,11 +66,11 @@ The results of execution (a JSON serialized object) are displayed. They include:
 {
    "clause":"helloworld@0.0.3-c8d9e40fe7c5a479d1a80bce2d2fdc3c8a240ceb44a031d38cbd619e9b795b60",
    "request":{
-      "$class":"io.enjoin.selenis.Request",
+      "$class":"org.accordproject.construction.requestforpayment.Request",
       "input":"World"
    },
    "response":{
-      "$class":"io.enjoin.selenis.Response",
+      "$class":"org.accordproject.construction.requestforpayment.Response",
       "output":"Hello Dan World",
       "transactionId":"cf1dabb5-d604-4ffa-8a87-8333e77a735a",
       "timestamp":"2017-10-31T10:47:42.055Z"
