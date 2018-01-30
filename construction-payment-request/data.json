@@ -1,6 +1,10 @@
 {
-    "$class": "org.accordproject.construction.requestforpayment.ApplicationSubmission",
+    "$class": "org.accordproject.construction.requestforpayment.ChangeOrderValidation",
     "netChangeOrderAmount": 100000,
     "adjustedContractAmount": 6250000,
-    "currBalanceDue": 25000
+    "totalEarnedToDate": 0,
+    "totalLessRetainage": 0,
+    "lessPrevAppPayment": 0,
+    "currBalanceDue": 25000,
+    "unpaidContractBalance": 0
 }

@@ -21,35 +21,49 @@
 /**
  * Execute the smart clause
  * @param {Context} context - the Accord context
- * @param {org.accordproject.construction.requestforpayment.ApplicationSubmission} context.request
+ * @param {org.accordproject.construction.requestforpayment.ChangeOrderValidation} context.request
  * @param {org.accordproject.construction.requestforpayment.PaymentApplicationResponse} context.response
  * @AccordClauseLogic
  */
-function applicationSubmission(context) {
+function changeOrderValidation(context) {
     logger.info(context);
     var req = context.request;
     var res = context.response;
     var data = context.data;
 
-    var appSubmission = moment(req.timestamp);
-    var appEndDate = moment(data.appEndDate);
-    var daysBeforeEndingPeriod = data.daysBeforeEndingPeriod
+    var appSubmission = moment(req.timestamp, "MM-DD-YYYY");
+    var appEndDate = moment(data.appEndDate, "MM-DD-YYYY");
+    var daysBeforeEndingPeriod = data.daysBeforeEndingPeriod;
+    var monthsInPaymentPeriod = data.monthsInPaymentPeriod;
     var originalContractAmount = data.originalContractAmount;
-    var netChangeOrderAmount = req.netChangeOrderAmount;
-    var adjustedContractAmount = req.adjustedContractAmount;
-    var currBalanceDue = req.currBalanceDue
     var gmp = data.gmp;
 
+    var netChangeOrderAmount = req.netChangeOrderAmount;
+    var adjustedContractAmount = req.adjustedContractAmount;
+    var totalEarnedToDate = req.totalEarnedToDate;
+    var totalLessRetainage = req.totalLessRetainage;
+    var lessPrevAppPayment = req.lessPrevAppPayment;
+    var currBalanceDue = req.currBalanceDue;
+    var unpaidContractBalance = req.unpaidContractBalance;
 
-    if(appSubmission.isAfter(appEndDate)) {
-      res.appStatus = 'OUT_OF_PAYMENT_PERIOD'
-    } else if(appSubmission.isAfter(appEndDate.subtract(daysBeforeEndingPeriod, 'days'))) {
-        res.appStatus = 'LATE_APPLICATION';
-    } else {
-      if(adjustedContractAmount > gmp) {
-        res.appStatus = 'OVER_GMP';
+    res.statusMsg = '';
+
+    if(adjustedContractAmount < gmp) {
+      if(appSubmission.isAfter(appEndDate)) {
+        res.appStatus = 'PENDING';
+        res.statusMsg += 'Out of payment period.';
+      } else if(appSubmission.isAfter(appEndDate.subtract(daysBeforeEndingPeriod, 'days'))) {
+          res.appStatus = 'PENDING';
+          res.statusMsg += 'Late application submission.';
+      } else {
+          res.appStatus = 'PREAPPROVED';
+          res.statusMsg += 'Application has been preapproved.';
       }
+    } else {
+      res.appStatus = 'DENIED';
+      res.statusMsg += 'Adjusted contract amount over guaranteed maximum price.'
     }
 }
+
 /* eslint-enable no-unused-vars */
 /* eslint-enable no-undef */

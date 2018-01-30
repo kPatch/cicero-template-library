@@ -18,20 +18,20 @@ abstract transaction PaymentApplicationTransaction {
 /**
  * A submission of a payment application
  */
-transaction ApplicationSubmission extends PaymentApplicationTransaction {
+transaction ChangeOrderValidation extends PaymentApplicationTransaction {
   // o DateTime appSubmissionDate
   o Double netChangeOrderAmount
   o Double adjustedContractAmount
-  // o Double totalEarnedToDate
-  // o Double retainagePercentFee
-  // o Double totalLessRetainage
-  // o Double lessPrevAppPayment
+  o Double totalEarnedToDate
+  o Double totalLessRetainage
+  o Double lessPrevAppPayment
   o Double currBalanceDue
-  // o Double unpaidContractBalance
+  o Double unpaidContractBalance
 }
 
 transaction PaymentApplicationResponse {
   o PaymentApplicationStatus appStatus
+  o String statusMsg
 }
 
 /**
@@ -79,15 +79,9 @@ concept Address {
  * Application status
  */
 enum PaymentApplicationStatus {
-  o OUT_OF_PAYMENT_PERIOD
-  o LATE_APPLICATION
-  o OVER_GMP
-  o CHANGE_ORDER
-  o SUBMITTED   // contractor submits application
-  o RECEIVED    // owner(s) receive application, it could be that they opened it
-  o PENDING     // marked under review: change orders, schedule of values must be reviewed
-  o APPROVED    // application is approved. release of fund can be made
-  o DENIED      // further review is required, often regarding change orders
+  o PREAPPROVED
+  o PENDING
+  o DENIED
 }
 
 /* ****************
